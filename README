@@ -1,0 +1,9 @@
+1> Create required services...
+./createServices.sh
+2> Config server: https://github.com/kbhattacharya-pivotal/vehicle-config-repo
+3> Push apps...
+cf push
+4> Load data...
+./loadStaticData.sh
+5> Start simulator
+

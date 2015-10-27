@@ -1,0 +1,37 @@
+applications:
+- name: cf-fleet-location-simulator
+  path: fleet-location-simulator/target/fleet-location-simulator-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - rabbitmq
+    - configserver
+    - eureka
+- name: cf-fleet-location-ingest
+  path: vehicle-fleet-demo/fleet-location-ingest/target/fleet-location-ingest-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - rabbitmq
+    - configserver
+    - eureka
+- name: cf-fleet-updater
+  path: vehicle-fleet-demo/fleet-location-updater/target/fleet-location-updater-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - rabbitmq
+    - configserver
+    - eureka
+- name: cf-fleet-location-service
+  path: vehicle-fleet-demo/fleet-location-service/target/fleet-location-service-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - mysql
+    - configserver
+    - eureka
+- name: cf-service-location-service
+  path: vehicle-fleet-demo/service-location-service/target/service-location-service-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - mongodb
+    - configserver
+    - eureka
+- name: cf-dashboard
+  path: vehicle-fleet-demo/dashboard/target/dashboard-1.0.0.BUILD-SNAPSHOT.jar
+  services:
+    - configserver
+    - eureka
+
