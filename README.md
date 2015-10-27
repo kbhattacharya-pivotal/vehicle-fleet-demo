@@ -123,6 +123,17 @@ or by executing:
 You should now be able to see the moving vehicles inside the main `Dashboard` application:
 
 http://localhost:8080/
+### Running On PivotalCF
+1> Create required services.
+./createServices.sh
+2> Config server point to git URL: https://github.com/kbhattacharya-pivotal/vehicle-config-repo
+3> Push apps.
+cf push
+4> Load data.
+./loadStaticData.sh
+5> Start simulator
+
+
 
 ### Dynamic Config Changes when running locally
 
