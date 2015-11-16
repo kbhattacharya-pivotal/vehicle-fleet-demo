@@ -125,6 +125,7 @@ You should now be able to see the moving vehicles inside the main `Dashboard` ap
 http://localhost:8080/
 
 ### Running On PivotalCF
+Make sure you have cf CLI targeted to the right org and space.
 
 **1. Create required services.**
 
